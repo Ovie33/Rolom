@@ -1,6 +1,6 @@
 import React from 'react'
-import RegisterLogo from '../Pages/registerIllustration.svg'
-import Input from '../components/Input/Input'
+import RegisterLogo from '../register/registerIllustration.svg'
+import Input from '../../components/Input/Input'
 
 function Register() {
   return (
