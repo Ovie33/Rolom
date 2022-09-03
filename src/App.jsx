@@ -14,11 +14,8 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Bloglist />
-        <AdminSidebar />
-        <ForgotPassword />
         <Routes>
-          <Route path="/home" element={<Blogs />} />
+          <Route path="/blogs" element={<Bloglist />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgot" element={<ForgotPassword />} />
         </Routes>
