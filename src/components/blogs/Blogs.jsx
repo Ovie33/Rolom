@@ -1,10 +1,11 @@
 import React from "react";
+import AdminSidebar from "../adminSidebar/AdminSidebar";
 
 function Blogs() {
   return (
-    <h1 class="text-3xl font-bold content-center items-center justify-center underline">
-      Hello world!
-    </h1>
+    <div>
+      <AdminSidebar />
+    </div>
   );
 }
 
