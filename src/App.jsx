@@ -8,6 +8,7 @@ import ForgotPassword from "./pages/forgotPassword/ForgotPassword.jsx";
 import Bloglist from "./pages/bloglist/Bloglist";
 import CreateBlog from "./pages/create blog/createBlog";
 
+import Register from "./pages/register/Register"
 import Navbar from "./components/nav bar/Navbar";
 import Siderbar from './components/studentSidebar/StudentSidebar'
 
