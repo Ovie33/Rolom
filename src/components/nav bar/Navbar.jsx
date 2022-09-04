@@ -10,7 +10,7 @@ function Navbar() {
           <Link to="/home">
             <li className="mx-4">Home</li>
           </Link>
-          <Link to="/home">
+          <Link to="/blogs">
             <li className="mx-4">Courses</li>
           </Link>
           <Link to="/home">
