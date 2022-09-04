@@ -10,10 +10,10 @@ function Register() {
         <div className='mr-32' style={{width: 300 + 'px'}}>
             <form>
                 <h1 className='text-center text-lg mb-4 font-bold'>REGISTER</h1>
-                <Input type="text" name="firstname" id="" placeholder="Firstname" />
-                <Input type="text" name="lastname" id="" placeholder="Lastname" />
-                <Input type="text" name="email" id="" placeholder="Email" />
-                <Input type="text" name="password" id="" placeholder="Password" />
+                <Input name="firstname" id="" placeholder="Firstname" />
+                <Input name="lastname" id="" placeholder="Lastname" />
+                <Input name="email" id="" placeholder="Email" />
+                <Input name="password" id="" placeholder="Password" />
                 <button className='bg-blue-600 hover:bg-blue-400 p-2 mt-5 rounded text-white'>Register</button>
             </form>
         </div>

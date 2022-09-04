@@ -9,6 +9,7 @@ import Bloglist from "./pages/bloglist/Bloglist";
 import CreateBlog from "./pages/create blog/createBlog";
 
 import Navbar from "./components/nav bar/Navbar";
+import Siderbar from './components/studentSidebar/StudentSidebar'
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
           <Route path="/blogs" element={<Bloglist />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgot" element={<ForgotPassword />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </Router>
   );
 }
 
-export default App;
+export default App
