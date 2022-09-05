@@ -11,44 +11,20 @@ import NavItem from "../navItem/NavItem";
 function adminSidebar() {
   return (
     <div>
-      <div className="w-64 h-screen bg-blue-200 opacity-40 shadow-slate-700 shadow-xl ">
-        <div className="pl-7 pt-7">LOGO</div>
-        <div className="pl-7 pt-12">
-          <h1 className="text-black text-xl font-bold">Menu</h1>
-          <NavItem
-            label="Dasboard"
-            icon={<img src={houseLogo} alt="" className="pr-2" />}
-          />
-          <NavItem
-            label="Students"
-            icon={<img src={studentsLogo} alt="" className="pr-2" />}
-          />
-          <NavItem
-            label="Staffs"
-            icon={<img src={staffLogo} alt="" className="pr-2" />}
-          />
-          <NavItem
-            label="Courses"
-            icon={<img src={coursesLogo} alt="" className="pr-2" />}
-          />
-          <NavItem
-            label="Time-Table"
-            icon={<img src={timtableLogo} alt="" className="pr-2" />}
-          />
-          <NavItem
-            label="Attendance"
-            icon={<img src={attendanceLogo} alt="" className="pr-2" />}
-          />
-          <NavItem
-            label="Examinations"
-            icon={<img src={examinationLogo} alt="" className="pr-2" />}
-          />
+      <div className="flex p-9 h-screen flex-col w-64  bg-blue-200 opacity-40 shadow-slate-700 shadow-xl ">
+        <div className="">LOGO</div>
+        <div className=" h-1/2 flex mt-24 flex-col justify-between">
+          <h1 className="text-black text-xl mb-3 font-bold">Menu</h1>
+          <NavItem label="Dasboard" icon={houseLogo} alt="" />
+          <NavItem label="Students" icon={studentsLogo} />
+          <NavItem label="Staffs" icon={staffLogo} />
+          <NavItem label="Courses" icon={coursesLogo} />
+          <NavItem label="Time-Table" icon={timtableLogo} />
+          <NavItem label="Attendance" icon={attendanceLogo} />
+          <NavItem label="Examinations" icon={examinationLogo} />
         </div>
-        <div className="flex pt-52 pl-7">
-          <NavItem
-            label="Account"
-            icon={<img src={accountLogo} alt="" className="pr-2" />}
-          />
+        <div className=" mt-auto">
+          <NavItem label="Account" icon={accountLogo} />
         </div>
       </div>
     </div>

@@ -16,20 +16,15 @@ function App() {
     <>
       <Router>
         <div className="App">
-          <Navbar />
-          <CreateBlog />
+          {/* <Navbar /> */}
           <Routes>
-            <Route path="/blogs" element={<Bloglist />} />
+            <Route path="/blogs">
+              <Route index element={<Bloglist />} />
+              <Route path="create" element={<CreateBlog />} />
+            </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/forgot" element={<ForgotPassword />} />
             <Route path="/register" element={<Register />} />
-          </Routes>
-        </div>
-      </Router>
-      <Router>
-        <div>
-          <Routes>
-            <Route path="/blogs" element={<Bloglist />} />
           </Routes>
         </div>
       </Router>
