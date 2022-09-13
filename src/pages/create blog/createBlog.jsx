@@ -1,5 +1,5 @@
 import React from "react";
-import SideBar from "../../components/studentSidebar/StudentSidebar";
+import SideBar from "../../components/StudentSidebar/StudentSidebar";
 import Input from "../../components/Input/Input";
 
 function CreateBlog() {
