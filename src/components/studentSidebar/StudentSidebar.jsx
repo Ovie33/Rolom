@@ -1,30 +1,34 @@
 import React from 'react';
 import StudentNavItem from '../StudentNavItem/StudentNavItem'
-import dashboardLogo from '../studentSidebar/dashboard.svg'
-import coursesLogo from '../studentSidebar/courses.svg'
-import examinationLogo from '../studentSidebar/examination.svg'
-import blogLogo from '../studentSidebar/brand-blogger.svg'
-import resultLogo from '../studentSidebar/result.svg'
-import AttendanceLogo from '../studentSidebar/list-check.svg'
+import dashboardLogo from './dashboard.svg'
+import coursesLogo from './courses.svg'
+import examinationLogo from './examination.svg'
+import blogLogo from './brand-blogger.svg'
+import resultLogo from './result.svg'
+import AttendanceLogo from './list-check.svg'
 import { Link } from "react-router-dom";
 
-function StudentSidebar() {
+function StudentSidebar({onClick, Logo}) {
   return (
-    <div>
-      <div className='bg-blue-200 w-40 h-screen p-5'>
-        <h4 className='mt-5'>LOGO</h4>
-        <p className='text-zinc-400 mt-10'>MENU</p>
-        <div className='flex flex-col pl-3 pt-4'>
-              <Link to="/home">
+     <div className='bg-blue-200 opacity-40 w-64 h-full p-9 flex flex-col shadow-slate-700 shadow-md'>
+       <div className='flex justify-between items-center'>
+       <h4>LOGO</h4>
+        <button onClick={onClick}>
+            <img className='' src={Logo} alt="toggle icon" />
+        </button>
+       </div>
+        <div className='h-1/2 flex flex-col justify-between mt-24'>
+        <p className='text-black text-xl mb-3 font-bold'>MENU</p>
+              <Link to="/dashboard">
               <StudentNavItem icon={dashboardLogo} label='Dashboard'/>
               </Link>
               <Link to="/home">
               <StudentNavItem icon={coursesLogo} label='Courses'/>
               </Link>
-              <Link to="/home">
+              <Link to="#">
               <StudentNavItem icon={blogLogo} label='Blog'/>
               </Link>
-              <Link to="/home">
+              <Link to="/exam">
               <StudentNavItem icon={examinationLogo} label='Examination'/>
               </Link>
               <Link to="/home">
@@ -34,7 +38,6 @@ function StudentSidebar() {
               <StudentNavItem icon={AttendanceLogo} label='Attendance'/>
               </Link>
         </div>
-    </div>
     </div>
   )
 }
