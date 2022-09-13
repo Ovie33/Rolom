@@ -7,9 +7,9 @@ import AdminSidebar from "./components/adminSidebar/AdminSidebar.jsx";
 import ForgotPassword from "./pages/forgotPassword/ForgotPassword.jsx";
 import Bloglist from "./pages/bloglist/Bloglist";
 import CreateBlog from "./pages/create blog/createBlog";
-
-import Register from "./pages/register/Register"
+import Register from "./pages/register/Register";
 import Navbar from "./components/nav bar/Navbar";
+<<<<<<< HEAD
 import Siderbar from './components/StudentSidebar/StudentSidebar'
 import ExamInput from "./components/ExamInput/ExamInput";
 import ExamNumbers from "./components/ExamNumbers/ExamNumbers";
@@ -35,7 +35,29 @@ function App() {
         </Routes>
       </div>
     </Router>
+=======
+import Siderbar from "./components/studentSidebar/StudentSidebar";
+
+function App() {
+  return (
+    <>
+      <Router>
+        <div className="App">
+          {/* <Navbar /> */}
+          <Routes>
+            <Route path="/blogs">
+              <Route index element={<Bloglist />} />
+              <Route path="create" element={<CreateBlog />} />
+            </Route>
+            <Route path="/login" element={<Login />} />
+            <Route path="/forgot" element={<ForgotPassword />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
+>>>>>>> 145e3f04ee7d7cf87335d0ffcb7eba466feac568
   );
 }
 
-export default App
+export default App;

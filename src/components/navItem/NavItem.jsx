@@ -3,11 +3,8 @@ import React from "react";
 function NavItem({ label, icon }) {
   return (
     <div>
-      <a
-        href="#"
-        className="p-4 text-black flex hover:text-yellow-500 hover:font-bold"
-      >
-        {icon}
+      <a className="pb-3 flex gap-2 text-black hover:text-yellow-300" href="#">
+        <img src={icon} alt={`a ${label} logo`} />
         {label}
       </a>
     </div>

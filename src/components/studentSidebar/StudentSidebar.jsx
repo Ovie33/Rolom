@@ -7,6 +7,7 @@ import blogLogo from './brand-blogger.svg'
 import resultLogo from './result.svg'
 import AttendanceLogo from './list-check.svg'
 import { Link } from "react-router-dom";
+import NavItem from "../navItem/NavItem";
 
 function StudentSidebar({onClick, Logo}) {
   return (
@@ -38,8 +39,8 @@ function StudentSidebar({onClick, Logo}) {
               <StudentNavItem icon={AttendanceLogo} label='Attendance'/>
               </Link>
         </div>
-    </div>
+      </div>
   )
 }
 
-export default StudentSidebar
+export default StudentSidebar;
